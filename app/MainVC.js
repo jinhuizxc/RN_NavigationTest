@@ -10,7 +10,7 @@ export default class MainVC extends Component {
     static navigationOptions = {
         headerTitle: '首页',//对页面的配置
         tabBarLabel: '首页',
-        tabBarIcon:<View style={{height:30,width:30,backgroundColor:'red'}}></View>
+        tabBarIcon:<View style={{height:30,width:30,backgroundColor:'red'}}/>
     };
     render() {
         const { navigate } = this.props.navigation;

@@ -6,12 +6,12 @@ import {
     View,
     TouchableOpacity
 } from 'react-native';
-export default class NewsVC extends Component {
+export default class MineVC extends Component {
 
     static navigationOptions = {
-        headerTitle: '消息',
-        tabBarLabel: '消息',
-        tabBarIcon:<View style={{height:30,width:30,backgroundColor:'red'}}></View>
+        headerTitle: '我的',
+        tabBarLabel: '我的',
+        tabBarIcon:<View style={{height:30,width:30,backgroundColor:'red'}}/>
     };
     render() {
         const { navigate } = this.props.navigation;

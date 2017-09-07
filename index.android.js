@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
     AppRegistry,
     StyleSheet,
@@ -19,22 +19,22 @@ import {
 import MainVC from './app/MainVC';
 import FindVC from './app/FindVC';
 import ReleaseVC from './app/ReleaseVC';
-import NewsVC from './app/News';
-import MineVC from './app/Mine';
+import NewsVC from './app/NewsVC';
+import MineVC from './app/MineVC';
 import DetailVC from './app/DetailVC';
 // 通过TabNavigator做路由映射
 
-const MainScreentNavigator=TabNavigator({
-    MainVC:{screen:MainVC},
-    FindVC:{screen:FindVC},
-    ReleaseVC:{screen:ReleaseVC},
-    NewsVC:{screen:NewsVC},
-    MineVC:{screen:MineVC},
+const MainScreentNavigator = TabNavigator({
+    MainVC: {screen: MainVC},
+    FindVC: {screen: FindVC},
+    ReleaseVC: {screen: ReleaseVC},
+    NewsVC: {screen: NewsVC},
+    MineVC: {screen: MineVC},
 });
 //引入要用到的跳转页面
 const RN_NavigationTest = StackNavigator({
-    Main:{screen:MainScreentNavigator},
-    DetailVC:{screen:DetailVC},
+    Main: {screen: MainScreentNavigator},
+    DetailVC: {screen: DetailVC},
 });
 
 const styles = StyleSheet.create({

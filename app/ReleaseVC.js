@@ -10,7 +10,7 @@ export default class ReleaseVC extends Component {
     static navigationOptions = {
         headerTitle: '发布',
         tabBarLabel: '发布',
-        tabBarIcon:<View style={{height:30,width:30,backgroundColor:'red'}}></View>
+        tabBarIcon:<View style={{height:30,width:30,backgroundColor:'red'}}/>
     };
     render() {
         const { navigate } = this.props.navigation;
