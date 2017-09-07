@@ -20,6 +20,7 @@ export default class DetailVC extends Component {
 
     render() {
         const {navigate} = this.props.navigation;
+        const { params } = this.props.navigation.state;
         return (
             <View style={styles.container}>
                 <TouchableOpacity style={{
@@ -30,7 +31,7 @@ export default class DetailVC extends Component {
                                   onPress={() => {
                                       this.backVC()
                                   }}>
-                    <Text>{this.props.navigation.state.params.des}</Text>
+                    <Text>{params.des}</Text>
                 </TouchableOpacity>
             </View>
         );
